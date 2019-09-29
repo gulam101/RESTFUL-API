@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DemoAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,21 +10,32 @@ namespace DemoAPI.Controllers
 {
     public class PeopleController : ApiController
     {
-        // GET: api/People
-        public IEnumerable<string> Get()
+        List<Person> people = new List<Person>();
+
+        public PeopleController()
         {
-            return new string[] { "value1", "value2" };
+            people.Add(new Person { FirstName = "Tim", LastName = "Correy", Id = 1 });
+            people.Add(new Person { FirstName = "Test1", LastName = "Storm", Id = 2 });
+            people.Add(new Person { FirstName = "Test2", LastName = "Battery", Id = 3 });
+        }
+        // GET: api/People
+        public List<Person> Get()
+        {
+            //return new string[] { "value1", "value2" };
+            return people;
         }
 
         // GET: api/People/5
-        public string Get(int id)
+        public Person Get(int id)
         {
-            return "value";
+            //As long as it is the same range as the ID then it will find that user
+            return people.Where(x => x.Id == id).FirstOrDefault();
         }
 
         // POST: api/People
-        public void Post([FromBody]string value)
+        public void Post(Person val)
         {
+            people.Add(val);
         }
 
         // PUT: api/People/5
