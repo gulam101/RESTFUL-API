@@ -15,6 +15,7 @@ If you want to see data, then load up the project in any web browser (preferably
 
 ### What I learnt: 
 - Learnt about RESTFUL-API
+- Researched about SOAP
 - Learnt about ASP.Net
 - Increased knowledge on Razor
 - Further understanding of HTML, CSS and JavaScript
