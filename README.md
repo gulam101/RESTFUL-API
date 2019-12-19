@@ -19,8 +19,6 @@ If you want to see data, then load up the project in any web browser (preferably
 - Increased knowledge on Razor
 - Further understanding of HTML, CSS and JavaScript
 
-I learnt about the API design and architecture constraints:
-
 **Architectural Constraints**
 1.	Uniform interface
 2.	Client–server
