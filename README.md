@@ -2,7 +2,7 @@
 
 ### Description:
 
-Learning about the API using ASP
+Learning about the API using ASP.Net
 
 I decided to play around with API’s and practising ASP.NET. The point of this project was to get used to everything within ASP and understand how API’s work.
 
@@ -19,6 +19,8 @@ If you want to see data, then load up the project in any web browser (preferably
 - Learnt about ASP.Net
 - Increased knowledge on Razor
 - Further understanding of HTML, CSS and JavaScript
+- How to use postman to check headers
+- Better understanding of JSON and XML
 
 **Architectural Constraints**
 1.	Uniform interface
@@ -27,3 +29,11 @@ If you want to see data, then load up the project in any web browser (preferably
 4.	Cacheable
 5.	Layered system
 6.	Code on demand (optional)
+
+### Constraints:
+
+None.
+
+### Improvements:
+
+None.
